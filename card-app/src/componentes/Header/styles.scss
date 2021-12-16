@@ -1,0 +1,145 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,200;0,300;0,400;1,400&display=swap');
+
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    margin: 0 auto;
+    padding: 0 16px;
+    height: 314px;
+
+    background-image: url('../../assets/background.svg');
+    background-color: #ffffff;
+    background-position: left bottom;
+    background-size: cover;
+
+    .header_item{
+        display: flex;
+        margin-top: 48px;
+        width: 100%;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+
+        .user_avatar {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            border: 2px solid;
+            border-color: var(--pink);
+            align-self: center;
+
+            img {
+                padding: 3px;
+                width: 54px;
+                height: 54px;
+
+                object-fit: cover;
+
+                border-radius: 50%;
+            }
+        }
+    
+        .insights_logo {
+            width: 50px;
+            height: 50px;
+        }
+
+        .add_button_area {
+            background: transparent;
+            border: 0;
+
+            width: 50px;
+            height: 50px;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .add_button {
+    
+                filter: invert(47%) sepia(25%) saturate(2207%) hue-rotate(304deg) brightness(92%) contrast(102%);
+            }
+        }
+
+    }
+
+}
+
+.user {
+    margin-top: 16px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    h2 {
+        font-family: 'Exo 2', sans-serif;
+        font-style: italic;
+        font-weight: 400;
+        font-size: 20px;
+        font-display: swap;
+        color: #FFFFFF;
+    }
+    span {
+        font-size: 12px;
+        font-family: 'Exo 2' ,sans-serif;
+        color: #FFFFFF;
+    }
+}
+
+.search_area {
+    display: flex;
+    justify-content: center;
+    padding: 0 16px;
+    
+    position: absolute;
+    bottom: 16px;
+
+    width: 100%;
+    .search {
+        
+    
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    
+        width: 100%;
+        max-width: 500px;
+        padding: 16px;
+        border-radius: 8px;
+        background: #FFFFFF;
+    
+        input {
+            border: 0;
+            background: transparent;
+            width: 100%;
+            line-height: 40px;
+            outline: none;
+    
+            font-style: italic;
+            font-weight: 400;
+            font-size: 14px;
+            font-family: 'Exo 2', sans-serif;
+        }
+    
+        button {
+            border: 0;
+            background: transparent;
+    
+            display: flex;
+            justify-content: center;
+            align-items: center;
+    
+            cursor: pointer;
+    
+            img {
+                filter: invert(60%) sepia(3%) saturate(22%) hue-rotate(314deg) brightness(92%) contrast(86%);
+            }
+        }
+    
+    }
+}
